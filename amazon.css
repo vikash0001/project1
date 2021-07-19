@@ -1,0 +1,302 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+.navlinks
+{
+    width: 100vw;
+    min-height: 56px;
+    height: 5.3vw;
+    background-color: rgb(15, 23, 30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 3vw;
+    font-size: 17px;
+   
+}
+.logo
+{
+    width: 21%;
+    min-width: 100px;
+}
+.navlinks #profile_img
+{
+  width: 2%;
+  display: none;
+}
+#language_selector::after
+{
+    position: absolute;
+    content: "";
+    border: solid 4px;
+    border-left-color: transparent;
+    border-top-color:rgb(114, 114, 114);
+    border-bottom-color:transparent;
+    border-right-color:transparent;
+    top: 8px;
+    left: 35px;
+}
+
+ul li
+{
+    display: inline;
+    margin:0px 25px 0px 14px;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    list-style: none;
+
+}
+ul li a{
+  text-decoration: none;
+}
+footer
+{
+  text-align: center;
+  height:117px;
+  padding: 25px;
+  background-color: rgb(34, 34, 34);
+  font-size: 14px;
+  word-spacing: 2px;
+  overflow: hidden;
+ 
+}
+footer a
+{
+  text-decoration: none;
+  color: rgb(44, 142, 172);
+  
+}
+
+
+@media only screen and (min-width:780px) {
+     #story_container1
+     { 
+       width: 100vw;
+       min-height: 70vh;
+       background-image: linear-gradient(to right,black 40%,transparent 58%),url(hero_image.jpg);
+       background-position: top right;
+       background-repeat: no-repeat;
+       padding: 4.9vw;
+       display: flex;
+       align-items: center;
+       background-color: black;
+
+     }
+     #story_container2{width: 100vw;
+      min-height: 70vh;
+      background-image: linear-gradient(to left,black 40%,transparent 58%),url(couple.jpg);
+      background-position: top left;
+      background-repeat: no-repeat;
+      padding: 4.9vw;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      background-color: black;}
+     #story_container3{width: 100vw;
+      min-height: 70vh;
+      background-image: linear-gradient(to right,black 40%,transparent 58%),url(cartoon_couple.jpg);
+      background-position: top right;
+      background-repeat: no-repeat;
+      padding: 4.9vw;
+      display: flex;
+      align-items: center;
+      background-color: black;}
+     #story_container4{width: 100vw;
+      min-height: 70vh;
+      background-image: linear-gradient(to left,black 40%,transparent 58%),url(remote.jpg);
+      background-position: top left;
+      background-repeat: no-repeat;
+      padding: 4.9vw;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      background-color: black;}
+      
+      #secondary_image5{
+        display: flex;
+        padding: 5vw;
+        flex-wrap: wrap;
+      }
+
+     #story_container5 h1,p{ 
+       color: black;
+     }
+     #story_container5 .img
+     {
+       margin: auto;
+       width: 300px;
+     }
+
+
+     #story_container6{
+      width: 100vw;
+      min-height: 70vh;
+      background-image: linear-gradient(to right,black 40%,transparent 58%),url(bheem.jpg);
+      background-position: top right;
+      background-repeat: no-repeat;
+      padding: 4.9vw;
+      display: flex;
+      align-items: center;
+      background-color: black;}
+
+    .content_text
+     { 
+       width: 39vw;
+       cursor: context-menu;
+     }
+     .content_text h1
+     {
+      font-size: 40px;
+      font-weight: lighter;
+     }
+     .content_text p
+     {
+       font-size: 20px;
+       margin: 30px 0px;
+       line-height: 28px;
+       color: white;
+     }
+     .content_text .btn
+     {
+       background-color: rgb(15, 121, 175);
+       width: 280px;
+       border-radius: 2px;
+       display: inline-block;
+       text-align: center;
+       padding: 17px;
+       height: 54px;
+      
+     }
+     .content_text .btn a
+      {
+        text-decoration: none;
+
+      }
+
+    }
+    @media only screen and (max-width:779px)
+    {
+      .story_container
+      { background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0vw 0vw 10vw 0vw;
+
+      }
+      .secondary_image
+      { 
+        width: 100vw;
+        min-height: 40vh;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-color: black;
+ 
+      }
+      #secondary_image1
+      {
+        background-image:linear-gradient(to top,black 0%,transparent 20%) ,url(hero1.jpg);
+      }
+      #secondary_image2
+      {
+        background-image:linear-gradient(to top,black 0%,transparent 20%) ,url(couple1.jpg);
+      }
+      #secondary_image3
+      {
+        background-image:linear-gradient(to top,black 0%,transparent 20%) ,url(cartoon_couple1.jpg);
+      }
+      #secondary_image4
+      {
+        background-image:linear-gradient(to top,black 0%,transparent 20%) ,url(remote1.jpg);
+      }
+      #secondary_image5
+      {
+        background-color: white;
+        text-align: center;
+        padding: 10vw 5vw 0vw;
+      }
+      #story_container5{
+        padding: 0vw;
+      }
+      #story_container5 h1{ 
+        color: black;
+        margin: 30px;
+        font-weight: lighter;
+        font-size: 25px
+      }
+      #story_container5 p {
+       color: rgb(70, 69, 69);
+       margin:28px;
+       font-size: 18px;
+      }
+      #story_container5 .img
+      {
+        margin:100px auto;
+        width: 300px;
+      }
+    
+      #secondary_image6
+      {
+        background-image:linear-gradient(to top,black 0%,transparent 20%) ,url(bheem1.jpg);
+        background-position: top center;
+      }
+      .content_text
+      { margin-top: 5px;
+        width: 75vw;
+        min-width: 320px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        cursor: context-menu;
+
+      }
+      .content_text h1
+      {
+       font-size: 28px;
+       font-weight: lighter;
+      }
+      .content_text p
+      {
+        font-size: 18px;
+        margin: 18px 0px;
+        line-height: 28px;
+      }
+      .content_text .btn
+      {
+        background-color: rgb(15, 121, 175);
+        display: inline-block;
+        padding: 1.25rem 4.3rem;
+        margin: 20px 0 50px;
+        min-width:300px;
+
+       
+      }
+      .content_text .btn a
+       {
+         text-decoration: none;
+         font-size: 17px;
+ 
+       }
+       .navlinks #profile_img
+      {
+         width: 25px;
+         display:inline-block;
+         cursor: pointer;
+      }
+        ul li 
+        {
+          display: none;
+        }
+  }
+    
+
+ 
